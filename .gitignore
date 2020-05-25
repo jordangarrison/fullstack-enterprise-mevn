@@ -173,3 +173,5 @@ sketch
 
 # End of https://www.gitignore.io/api/emacs,node,vue
 
+server/public/app.css
+server/public/app.js
