@@ -20,6 +20,7 @@
   "author": "Jordan Garrison",
   "license": "MIT",
   "dependencies": {
+    "@fullstackjs/mail": "^1.0.7",
     "axios": "^0.19.2",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
