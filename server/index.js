@@ -28,6 +28,8 @@ app.use(
 )
 app.use(webapackHotMiddleware(compiler))
 
+app.use(Express.static(path.resolve(__dirname, 'public')))
+
 app.use(v1Router)
 
 app.get('*', (req, res) => {
