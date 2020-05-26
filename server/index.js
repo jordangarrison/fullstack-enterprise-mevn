@@ -4,6 +4,7 @@ import path from 'path'
 import config from '@config'
 import v1Router from '@routes'
 import webpackConfig from '../webpack.config'
+import BodyParser from 'body-parser'
 import webpackDevMiddleware from 'webpack-dev-middleware'
 import webapackHotMiddleware from 'webpack-hot-middleware'
 import webpack from 'webpack'
@@ -14,6 +15,8 @@ Mongoose.connect(config.databaseUri, {
 })
 
 const app = Express()
+
+app.use(BodyParser.json())
 
 const compiler = webpack(webpackConfig)
 
