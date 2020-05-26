@@ -8,7 +8,9 @@
         "root": ["./"],
         "alias": {
           "@": "./",
+          "@client": "./client",
           "@components": "./client/components",
+          "@store": "./client/store",
           "@pages": "./client/pages",
           "@config": "./server/config",
           "@routes": "./server/routes",

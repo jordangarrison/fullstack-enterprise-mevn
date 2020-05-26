@@ -40,6 +40,7 @@
 </template>
 
 <script type="text/javascript">
+import { POST_REGISTER } from '@store/auth/actions'
 export default {
   data: () => ({
     model: {
@@ -52,6 +53,7 @@ export default {
     register() {
       this.$validator.validate().then((isValid) => {
         if (!isValid) return
+        this.$store.dispatch(POST_REGISTER, this.model)
       })
     }
   }
